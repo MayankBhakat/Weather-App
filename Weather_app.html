@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Weather Report</title>
+      
+</head>
+<body  style="background: #eeedec;
+            letter-spacing: 0.2em;
+            font-size: 0.8em;">
+
+
+  
+
+
+    <div class="container mx-auto tracking-wider " style="max-width:400px">       <!--Ref note 4-->
+
+        <div class="text-3xl text-gray-500 text-center mt-10">Weather 4 u</div>   
+
+        <div class="flex flex-col justify-center items-center">                   <!--Ref Note 3-->
+
+        <form class="new-loc my-4 text-center text-slate-400 w-full max-w-5xl">   <!--Ref Note 2-->   
+                         
+            <label for="city">Enter a location for weather information</label>
+            <input type="text" name="city" class=" block w-full  bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 mt-3  focus:outline-none focus:bg-white ">                            <!--Ref Note 1-->  
+
+        </form>
+
+        </div>
+
+        <div class="card shadow-xl hidden">                                            <!--Ref Note 5-->
+
+            <img src="https://via.placeholder.com/400x300" class="time">        <!--place-holder.com(Just copy the image url)-->
+
+            <img class="icon bg-light mx-auto text-center ">                     <!--Ref Note 6-->
+
+                <!--icon-->
+
+        </img>
+            <div class="text-center details">                                   <!--Ref Note 7-->
+
+                <div class="mt-2 mb-1 text-gray-500 text-lg">CITY NAME</div>
+
+                <div class="mb-3 text-gray-400">WEATHER CONDITION</div>
+
+                <div class=" pb-6 text-4xl text-gray-600"> TEMP &deg;C</div>   <!--Ref Note 8-->
+
+              </div>
+        </div>
+    </div>
+
+    <script src="Forecast.js"></script>
+    <script src="Weather_app.js"></script>                                      <!--Ref Note 16-->
+
+</body>
+</html>
